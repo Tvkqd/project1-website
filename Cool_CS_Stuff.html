@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Cool CS Stuff</title>
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+<p class="images">
+  <br>
+
+</p>
+
+  <p class = "menu">
+    <a class = "menu" href="index.html">Home Page</a> |
+    <a class = "menu" href="What_Is_CS.html">What is CS Page</a> |
+    <a class = "menu" href="Why_CS.html">Why CS Page</a> |
+    <a class = "menu" href="Careers.html">Careers Page</a> |
+    <a class = "menu" href="Life_Of_CS.html">Life of CS Page</a> |
+    <a class = "menu active" href="Cool_CS_Stuff.html">Cool CS Stuff Page</a>
+
+</p>
+    
+
+<h1>
+<br>
+Other Page Example</h1>
+
+    <p class="text">  
+
+    </p>
+
+    <button class="accordion">> Panel1</button>
+
+    <p class="panel">
+
+      <br><br>
+    </p>
+  
+
+    <button class="accordion">> Panel2</button>
+
+      <p class="panel">
+
+        <br><br>
+        
+      </p>
+    
+    <button class="accordion">> Panel3</button>
+
+    <p class="panel">
+
+      <br><br>
+
+    </p>
+
+    <p  class="social">
+      <br>
+      <br>
+
+
+    
+      <br>
+      <br>
+      <br>
+
+  </p>
+
+    <script>
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+      
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var panel = this.nextElementSibling;
+          if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+          } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+          } 
+        });
+      }
+      
+      </script>
+
+</body>
+</html>
+
