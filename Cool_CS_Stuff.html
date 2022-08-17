@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Cool CS Stuff</title>
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+<p class="images">
+  <br>
+
+</p>
+
+  <p class = "menu">
+    <a class = "menu" href="index.html">Home Page</a> |
+    <a class = "menu" href="What_Is_CS.html">What is CS Page</a> |
+    <a class = "menu" href="Why_CS.html">Why CS Page</a> |
+    <a class = "menu" href="Careers.html">Careers Page</a> |
+    <a class = "menu" href="Life_Of_CS.html">Life of CS Page</a> |
+    <a class = "menu active" href="Cool_CS_Stuff.html">Cool CS Stuff Page</a>
+
+</p>
+    
+
+<h1>
+<br>
+Cool Things About Computers</h1>
+
+    <p class="text">  
+      Here are just some of the crazy cool things that can be done in the world of Computer Science. Hopefully this will give you the 
+      same inspiration, love, and enjoyment for Computer Science the rest of us have.
+    </p>
+
+    <button class="accordion">> Can dominos become a computer?</button>
+
+    <p class="panel">
+      With enough ingenuity, you can build logic gates out of dominos, so YES! You can in fact use dominos to make a computer.
+      <br><br>
+      <embed src="https://www.youtube.com/embed/OpLU__bhu2w"
+        width="700" height="394" title="The 10,000 Domino Computer">
+      <br><br>
+    </p>
+  
+
+    <button class="accordion">> Can a card game become a computer?</button>
+
+      <p class="panel">
+        Would you believe me if I said yes? Watch this video on how Magic the Gathering can become a computer.
+        <br><br>
+        <embed src="https://www.youtube.com/embed/pdmODVYPDLA"
+          width="700" height="394" title="I Built a COMPUTER in Magic: The Gathering">
+        <br><br>
+        
+      </p>
+    
+    <button class="accordion">> Hardware limitations are no match for a little creativity!</button>
+
+    <p class="panel">
+      As computer scientists we have to think beyond what the supposed limits are.
+      In this video we see who one game dev team pushed an old console's hardware to its limits in a way most people would say is impossible.
+
+      <br><br>
+      <embed src="https://www.youtube.com/embed/fZWwv5FNLE0"
+        width="700" height="394" title="Toy Story's Hardware Defying Music - How We Did It">
+      <br><br>
+    </p>
+
+    <p  class="social">
+      <br>
+      <br>
+
+
+    
+      <br>
+      <br>
+      <br>
+
+  </p>
+
+    <script>
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+      
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var panel = this.nextElementSibling;
+          if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+          } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+          } 
+        });
+      }
+
+      
+      </script>
+
+</body>
+</html>
+
