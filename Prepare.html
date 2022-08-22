@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Prepare for CS</title>
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+<p class="images">
+  <br>
+
+</p>
+
+  <p class = "menu">
+    <a class = "menu" href="index.html">Home Page</a> |
+    <a class = "menu" href="What_Is_CS.html">What is CS</a> |
+    <a class = "menu" href="Careers.html">Careers</a> |
+    <a class = "menu" href="Life_Of_CS.html">Life of CS</a> |
+    <a class = "menu" href="Cool_CS_Stuff.html">Cool CS Stuff</a> |
+    <a class = "menu" href="About_Us.html">About Us</a>
+
+
+</p>
+    
+
+<h1>
+<br>
+Prepare to be a Computer Science Major</h1>
+
+    <p class="text">  
+      How to prepare to be a Computer Science Major
+      <br>
+    </p>
+
+    <button class="accordion">> Know some Terminology</button>
+
+    <p class="panel">
+      In your class, you will probably learn most of the terminology you will need. However, here are some basic terms that will be helpful to know. <br><br>
+
+      program/code/software/application - computer instructions <br><br>
+      Programming - writing code to make programs <br><br>
+      Programming Language - the type of code used to make the program. Some programming languages are for specific uses while others are very versitile.  <br><br>
+      Some popular languages: <br>
+        C, C++, C# <br>
+        Java<br>
+        Python<br>
+        HTML/CSS<br>
+        JavaScript<br><br>
+      Binary - number system with two digits: 0s and 1s <br><br>
+      Bit - A binary digit. The smallest piece of information <br><br>
+      bool/boolean - a data type that can only be set to true or false <br><br>
+      int - integer data type (whole numbers) <br><br>
+      float - floating point number (can have decimals) <br><br>
+      double - floating point number with more precision than a float <br><br>
+      array - sequential set of data <br><br>
+
+
+      IDE (integrated development environment) - These are software used to make writing and executing code easier. <br><br>
+      LAN (local area network) - a network in a local area. An example of this is WiFi <br><br>
+      Git - source code control software <br><br>
+      Repository - project on source code control such as Git <br><br>
+      Push - upload your code to Git <br><br>
+      Pull - download updates from Git <br><br>
+      Commit - update your copy of code so you can push it <br><br> 
+
+
+      <br><br>
+    </p>
+  
+
+    <button class="accordion">> Know how to find what you need on Google</button>
+
+      <p class="panel">
+        No matter what programming language you want to learn and use, Google will be a great help!
+        <br>
+        Remember to use key words such as the language you will be using and what you want to do or need help with. 
+        <br>
+        
+        <br><br>
+        
+      </p>
+    
+    <button class="accordion">> Resources</button>
+
+    <p class="panel">
+      The main resources you should know of are StackOverflow and YouTube. 
+      <br>
+      <a class = "menu" href="Resources.html">Here you can find more recourses for preparing for, learning, and writing programs!</a> 
+      <br>
+      
+      
+      <br><br>
+
+    </p>
+
+    <p style="text-align: center">
+      <br>
+            
+      <a href="mailto:nobody@willanswerthis.com?subject= Get Ready!&body= 
+      The FitnessGram™ Pacer Test is a multistage aerobic capacity test that progressively gets more difficult as it continues. The 20 meter pacer test will begin in 30 seconds. Line up at the start. The running speed starts slowly, but gets faster each minute after you hear this signal. [beep] A single lap should be completed each time you hear this sound. [ding] Remember to run in a straight line, and run as long as possible. The second time you fail to complete a lap before the sound, your test is over. The test will begin on the word start. On your mark, get ready, start.">Contact Us!</a>
+    </p>
+
+    <script>
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+      
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var panel = this.nextElementSibling;
+          if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+          } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+          } 
+        });
+      }
+      
+      </script>
+
+</body>
+</html>
+

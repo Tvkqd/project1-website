@@ -13,11 +13,11 @@
   </p>
     <p class = "menu">
         <a class = "menu active" href="index.html">Home Page</a> |
-        <a class = "menu" href="What_Is_CS.html">What is CS Page</a> |
-        <a class = "menu" href="Why_CS.html">Why CS Page</a> |
-        <a class = "menu" href="Careers.html">Careers Page</a> |
-        <a class = "menu" href="Life_Of_CS.html">Life of CS Page</a> |
-        <a class = "menu" href="Cool_CS_Stuff.html">Cool CS Stuff Page</a>
+        <a class = "menu" href="What_Is_CS.html">What is CS</a> |
+        <a class = "menu" href="Careers.html">Careers</a> |
+        <a class = "menu" href="Life_Of_CS.html">Life of CS</a> |
+        <a class = "menu" href="Cool_CS_Stuff.html">Cool CS Stuff</a> |
+        <a class = "menu" href="About_Us.html">About Us</a>
 
 
 
@@ -26,8 +26,56 @@
     <h1>
     <br>
     Home Page
+    <br><br><br>
     </h1>
  
+    <div class="slideshow-container">
+
+      <div class="mySlides fade" >
+        <div class="numbertext">1 / 5</div>
+        <img src="img_nature_wide.jpg" style="width:100%">
+        <a class = "caption" href="What_Is_CS.html">What is CS</a>
+      </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 5</div>
+        <img src="img_snow_wide.jpg" style="width:100%">
+        <a class = "caption" href="Careers.html">Careers</a>
+      </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 5</div>
+        <img src="img_mountains_wide.jpg" style="width:100%">
+        <a class = "caption" href="Life_Of_CS.html">Life of CS</a>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">4 / 5</div>
+        <img src="img_mountains_wide.jpg" style="width:100%">
+        <a class = "caption" href="Cool_CS_Stuff.html">Cool CS Stuff</a>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">5 / 5</div>
+        <img src="img_mountains_wide.jpg" style="width:100%">
+        <a class = "caption" href="About_Us.html">About Us</a>
+      </div>
+      
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+      
+      </div>
+      <br>
+      
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+        <span class="dot" onclick="currentSlide(4)"></span> 
+        <span class="dot" onclick="currentSlide(5)"></span> 
+      </div>
+
+
     <p class="text">
       stuff go here
 
@@ -39,17 +87,43 @@
 
 
 
-    <p  class="social">
-        <br>
-        <br>
-
-
-      
-        <br>
-        <br>
-        <br>
-
+    <p style="text-align: center">
+      <br>
+            
+      <a href="mailto:nobody@willanswerthis.com?subject= Get Ready!&body= 
+      The FitnessGram™ Pacer Test is a multistage aerobic capacity test that progressively gets more difficult as it continues. The 20 meter pacer test will begin in 30 seconds. Line up at the start. The running speed starts slowly, but gets faster each minute after you hear this signal. [beep] A single lap should be completed each time you hear this sound. [ding] Remember to run in a straight line, and run as long as possible. The second time you fail to complete a lap before the sound, your test is over. The test will begin on the word start. On your mark, get ready, start.">Contact Us!</a>
     </p>
+
+    <script>
+      let slideIndex = 1;
+      showSlides(slideIndex);
+      
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+      
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+      
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" activedot", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " activedot";
+      }
+      </script>
+
+
 
 
 </body>
