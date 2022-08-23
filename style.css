@@ -132,7 +132,7 @@ body {
     color: rgb(255, 255, 255);
   }
   a:hover:not(.active){
-    background-color: black;
+    /* background-color: black; */
     color: rgb(255, 255, 255);
   }
   a.link {
@@ -498,10 +498,23 @@ body {
   font-family:'Courier New', Courier, monospace;
   color: white;
   font-size: 15px;
-  padding: 8px 12px;
   position: absolute;
-  bottom: 8px;
-  width: 100%;
+  left: 43%;
+  right: 43%;
+  top: 200px;
+  bottom: 150px;
+  text-align: center;
+}
+
+.slides {
+  font-family:'Courier New', Courier, monospace;
+  color: white;
+  font-size: 15px;
+  position: absolute;
+  left: 25%;
+  top: -150px;
+  bottom: 150px;
+  width: 50%;
   text-align: center;
 }
 
